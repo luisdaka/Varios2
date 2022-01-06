@@ -12,8 +12,17 @@ public class Main {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
-        list.add(3);
-        list.add(4);
+
+        LinkedList<Integer> list12 = new LinkedList<>();
+        list12.add(3);
+        list12.add(4);
+        list12.add(1);
+        list12.add(2);
+        list12.add(3);
+        list12.add(4);
+
+        System.out.println(1/0);
+
         list.add(5);
         list.add(6);
         list.add(7);
@@ -22,20 +31,23 @@ public class Main {
         list.add(8);
         Set<Integer> set = new HashSet<Integer>();
 
-
-
         set.stream().collect(Collectors.toList());
 
         ArrayList<Integer> list2 = new ArrayList<>();
         list2.add(1);
         list2.add(2);
         list2.add(3);
+        list2.add(3);
 
-        /*System.out.println(test.findValue(list,2));
+        System.out.println("/////////////////////////////");
+        System.out.println(test.findTwoTimes(list2));
+
+
+        System.out.println(test.findValue(list,2));
         System.out.println(test.countValue(list2,1));
         System.out.println(test.countValueArray(list,list2));
         System.out.println(test.plusOne(list));
-        System.out.println(test.lucas(1));*/
+        System.out.println(test.lucas(1));
         test.solution1(14);
         //System.out.println(test.sumDigits(14));
         //System.out.println(test.impartes(list));
@@ -64,6 +76,17 @@ public class Main {
 
 
         System.out.println(test.getCic2("000046286018","46286018"));
+
+        System.out.println("/////////////////////////////");
+
+        String javaVersion = System.getProperty("java.version");
+        System.out.println(javaVersion);
+
+
+        List lista = Arrays.asList("Bob", "Bill", "Ben");
+        final String message = "Welcome";
+        lista.forEach( name -> System.out.println(message + " " + name) );
+        //message = "Goodbye";
 
 
     }
